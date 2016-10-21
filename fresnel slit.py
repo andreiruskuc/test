@@ -11,7 +11,7 @@ x=np.linspace(-L/2,L/2,int(L))
 
 #Define the slit aperture function.
 def A(x,d):
-	return (np.abs(x)<d/2).astype(float)
+	return (np.s(x)<d/2).astype(float)
 
 #Define modified aperture function as required for fresnel diffraction.
 def Aprime(x,d):
